@@ -31,6 +31,7 @@ function UUF:CreateUnitFrame(unitFrame, unit)
     if isPlayer or isTarget then UUF:CreateUnitCombatIndicator(unitFrame, unit) end
     if isPlayer then UUF:CreateUnitRestingIndicator(unitFrame, unit) end
     -- if isPlayer then UUF:CreateUnitTotems(unitFrame, unit) end
+    if isTarget then UUF:CreateUnitClassificationMarker(unitFrame, unit) end
     UUF:CreateUnitMouseoverIndicator(unitFrame, unit)
     UUF:CreateUnitTargetGlowIndicator(unitFrame, unit)
     UUF:CreateUnitAuras(unitFrame, unit)
