@@ -603,7 +603,7 @@ local Defaults = {
                 --     }
                 -- },
                 Portrait = {
-                    Enabled = false,
+                    Enabled = true,
                     Width = 22,
                     Height = 22,
                     Layout = {"RIGHT", "LEFT", -1, 0},

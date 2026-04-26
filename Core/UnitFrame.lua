@@ -22,7 +22,7 @@ function UUF:CreateUnitFrame(unitFrame, unit)
     UUF:CreateUnitHealthBar(unitFrame, unit)
     if isPlayer or isTarget or isFocus then UUF:CreateUnitDispelHighlight(unitFrame, unit) end
     UUF:CreateUnitHealPrediction(unitFrame, unit)
-    if not isTargetTarget and not isFocusTarget then UUF:CreateUnitPortrait(unitFrame, unit) end
+    if not isFocusTarget then UUF:CreateUnitPortrait(unitFrame, unit) end
     UUF:CreateUnitPowerBar(unitFrame, unit)
     if isPlayer then UUF:CreateUnitAlternativePowerBar(unitFrame, unit) end
     if isPlayer then UUF:CreateUnitSecondaryPowerBar(unitFrame, unit) end

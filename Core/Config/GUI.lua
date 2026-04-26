@@ -1711,7 +1711,7 @@ local function CreatePortraitSettings(containerParent, unit, updateCallback)
     local WidthSlider = AG:Create("Slider")
     WidthSlider:SetLabel("Width")
     WidthSlider:SetValue(PortraitDB.Width)
-    WidthSlider:SetSliderValues(8, 64, 0.1)
+    WidthSlider:SetSliderValues(8, 256, 0.1)
     WidthSlider:SetRelativeWidth(0.5)
     WidthSlider:SetCallback("OnValueChanged", function(_, _, value) PortraitDB.Width = value updateCallback() end)
     LayoutContainer:AddChild(WidthSlider)
@@ -1719,7 +1719,7 @@ local function CreatePortraitSettings(containerParent, unit, updateCallback)
     local HeightSlider = AG:Create("Slider")
     HeightSlider:SetLabel("Height")
     HeightSlider:SetValue(PortraitDB.Height)
-    HeightSlider:SetSliderValues(8, 64, 0.1)
+    HeightSlider:SetSliderValues(8, 256, 0.1)
     HeightSlider:SetRelativeWidth(0.5)
     HeightSlider:SetCallback("OnValueChanged", function(_, _, value) PortraitDB.Height = value updateCallback() end)
     LayoutContainer:AddChild(HeightSlider)
@@ -2286,6 +2286,7 @@ local function CreateIndicatorSettings(containerParent, unit)
             { text = "Raid Target Marker", value = "RaidTargetMarker" },
             { text = "Mouseover", value = "Mouseover" },
             { text = "Target Indicator", value = "TargetIndicator" },
+            { text = "Portrait", value = "Portrait"},
         })
     end
     IndicatorContainerTabGroup:SetCallback("OnGroupSelected", SelectIndicatorTab)
