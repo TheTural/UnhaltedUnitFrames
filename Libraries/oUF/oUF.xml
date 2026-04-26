@@ -40,6 +40,7 @@
 	<Script file="elements\tags.lua"/>
 	<Script file="elements\threatindicator.lua"/>
 	<Script file="elements\totems.lua"/>
+	<Script file="elements\classificationindicator.lua"/>
 
 	<Script file="finalize.lua"/>
 

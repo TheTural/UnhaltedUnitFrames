@@ -432,6 +432,11 @@ local Defaults = {
                     Target = {
                         Enabled = false,
                         Colour = {1, 1, 1},
+                    },
+                    ClassificationMarker = {
+                        Enabled = true,
+                        Size = 20,
+                        Layout = {"CENTER", "TOP", 0, 0},
                     }
                 },
                 Range = {

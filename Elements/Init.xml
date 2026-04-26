@@ -20,4 +20,5 @@
 	<Script file="Indicators/Combat.lua"/>
 	<Script file="Indicators/TargetGlow.lua"/>
 	<!-- <Script file="Indicators/Totems.lua"/> -->
+	<Script file="Indicators/Classification.lua"/>
 </Ui>
